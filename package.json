@@ -1,11 +1,7 @@
 {
-  "dependencies": {
-    "cypress": "^9.0.0"
-  },
   "name": "cypresstrainingeg",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +16,8 @@
     "url": "https://github.com/afirdaus04/cypresstrainingeg/issues"
   },
   "homepage": "https://github.com/afirdaus04/cypresstrainingeg#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "cypress": "^10.3.1"
+  }
 }
