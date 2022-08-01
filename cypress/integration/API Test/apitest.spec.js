@@ -1,5 +1,3 @@
-const { it } = require("mocha");
-
 describe('HTTP Example', function () {
 
     it('GET',function(){
@@ -25,8 +23,8 @@ describe('HTTP Example', function () {
                 'age': 29
                 
             },
-            headeers: {
-                'content-type': 'application/json'
+            headers: {
+                'Content-Type': 'application/json'
             }
 
         }).then(function (response) {
