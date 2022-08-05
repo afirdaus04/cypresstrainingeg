@@ -8,8 +8,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
-  jobs:
+   
+  job:
     cypress-test:
     name: Run on Chrome 83
     runs-on: ubuntu-latest
@@ -37,3 +37,9 @@ on:
       
     - name: Generate Test Reports
       run: npm run generate:report
+      
+    - name: Deploy report page to Github Page
+      uses: peaceiris/actions-gh-pages@v3
+      with: 
+        github_token: ${{secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
