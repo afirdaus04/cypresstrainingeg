@@ -17,7 +17,7 @@ jobs:
           record: true
         env:
           # pass the Dashboard record key as an environment variable
-          CYPRESS_RECORD_KEY: 08706c4f-2f5e-49d5-a1c7-6900dbe8dfc0
+          CYPRESS_RECORD_KEY: 631e684b-c866-4185-a9df-a59ee85e4d6d
           # pass GitHub token to allow accurately detecting a build vs a re-run build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # pass the project ID from the secrets through environment variable
